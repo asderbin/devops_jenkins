@@ -1,0 +1,12 @@
+FROM 94.139.247.22:8085/alpine:latest
+
+RUN apk update && \
+    apk add maven && \  
+    apk add openjdk11 && \
+    apk add git && \
+    apk cache clean
+
+RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git /root/boxfuse-sample-java-war-hello
+WORKDIR /root/boxfuse-sample-java-war-hello
+
+RUN mvn package
