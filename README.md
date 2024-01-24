@@ -1,0 +1,1 @@
+Devops-specialist course, homework for lesson 11 "Jenkins": Using Jenkins, you need to build and deploy a Java application. The assembly must take place in an assembly container, and the application must be launched in a prod container. The build artifact must be a Docker image with an application.
